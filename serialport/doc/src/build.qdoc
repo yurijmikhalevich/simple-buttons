@@ -1,0 +1,54 @@
+/****************************************************************************
+**
+** Copyright (C) 2011 - 2012 Denis Shienkov <denis.shienkov@gmail.com>
+** Contact: http://www.qt-project.org/legal
+**
+** This file is part of the documentation of the Qt Toolkit.
+**
+** $QT_BEGIN_LICENSE:FDL$
+** Commercial License Usage
+** Licensees holding valid commercial Qt licenses may use this file in
+** accordance with the commercial license agreement provided with the
+** Software or, alternatively, in accordance with the terms contained in
+** a written agreement between you and Digia.  For licensing terms and
+** conditions see http://qt.digia.com/licensing.  For further information
+** use the contact form at http://qt.digia.com/contact-us.
+**
+** GNU Free Documentation License Usage
+** Alternatively, this file may be used under the terms of the GNU Free
+** Documentation License version 1.3 as published by the Free Software
+** Foundation and appearing in the file included in the packaging of
+** this file.  Please review the following information to ensure
+** the GNU Free Documentation License version 1.3 requirements
+** will be met: http://www.gnu.org/copyleft/fdl.html.
+** $QT_END_LICENSE$
+**
+****************************************************************************/
+
+/*!
+    \module QtSerialPort
+    \title Building and usage
+    \page build.html
+    \previouspage Get source
+    \contentspage {Building and usage} {Contents}
+    \nextpage Examples
+
+    \section1 Building
+
+    Make sure that when you build Qt, that you use the -developer-build option,
+    and do not do a \c{make install} as root. The same branch can be used for
+    building with Qt4 and Qt5.
+
+    Instructions for building against Qt4 are fundamentally the same as for
+    Qt5. See the information provided below what needs to be done after getting
+    the source by cloning the repository:
+
+    \code
+    $ cd qtserialport
+    $ qmake
+    $ make (Unix) or jom/nmake (Windows)
+    \endcode
+
+    Once having successfully built, the examples can be run to see the intended
+    functionality provided by the module.
+*/

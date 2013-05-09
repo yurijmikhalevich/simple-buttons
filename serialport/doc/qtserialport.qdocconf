@@ -1,0 +1,39 @@
+include($QT_INSTALL_DOCS/global/qt-module-defaults.qdocconf)
+
+project                 = QtSerialPort
+description             = Qt Serial Port Reference Documentation
+url                     = http://qt-project.org/doc/qt-$QT_VER/qtserialport
+version                 = $QT_VERSION
+
+qhp.projects            = QtSerialPort
+
+qhp.QtSerialPort.file                = qtserialport.qhp
+qhp.QtSerialPort.namespace           = org.qt-project.qtserialport.$QT_VERSION_TAG
+qhp.QtSerialPort.virtualFolder       = qtserialport
+qhp.QtSerialPort.indexTitle          = Qt Serial Port Reference Documentation
+qhp.QtSerialPort.indexRoot           =
+
+qhp.QtSerialPort.filterAttributes    = qtserialport $QT_VERSION qtrefdoc
+qhp.QtSerialPort.customFilters.Qt.name = QtSerialPort $QT_VERSION
+qhp.QtSerialPort.customFilters.Qt.filterAttributes = qtserialport $QT_VERSION
+
+qhp.QtSerialPort.subprojects         = overviews classes examples
+
+qhp.QtSerialPort.subprojects.overviews.title = Overview
+qhp.QtSerialPort.subprojects.overviews.indexTitle = Qt Serial Port
+qhp.QtSerialPort.subprojects.overviews.selectors = fake:page,group,module
+
+qhp.QtSerialPort.subprojects.overviews.title = C++ Classes
+qhp.QtSerialPort.subprojects.overviews.indexTitle = Qt Serial Port C++ Classes
+qhp.QtSerialPort.subprojects.overviews.selectors = class fake:headerfile
+
+qhp.QtSerialPort.subprojects.examples.title = Examples
+qhp.QtSerialPort.subprojects.examples.indexTitle = Qt Serial Port Examples
+qhp.QtSerialPort.subprojects.examples.selectors = fake:example
+
+headerdirs  += ..
+sourcedirs  += ..
+exampledirs += ../../../examples
+imagedirs   += images
+
+depends += qtcore qtdoc
