@@ -89,7 +89,7 @@ void MainWindow::on_pushButton_toggled(bool checked)
             ui->comboBoxPortList->setEnabled(false);
             ui->reset->setEnabled(true);
         } else {
-            QMessageBox::critical(this, "Ошибка", "Невозможно открыть порт");
+            QMessageBox::critical(this, "Error", "Unable to open port");
             ui->pushButton->setChecked(false);
         }
     } else {

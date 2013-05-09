@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>432</width>
-    <height>165</height>
+    <width>430</width>
+    <height>163</height>
    </rect>
   </property>
   <property name="maximumSize">
@@ -45,7 +45,7 @@
          </sizepolicy>
         </property>
         <property name="text">
-         <string>Подключиться</string>
+         <string>Connect</string>
         </property>
         <property name="checkable">
          <bool>true</bool>
@@ -247,18 +247,13 @@
      </layout>
     </item>
    </layout>
-   <zorder>reset</zorder>
-   <zorder>layoutWidget</zorder>
-   <zorder>layoutWidget</zorder>
-   <zorder>layoutWidget</zorder>
-   <zorder>layoutWidget</zorder>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>432</width>
+     <width>430</width>
      <height>28</height>
     </rect>
    </property>
